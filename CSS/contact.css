@@ -1,25 +1,7 @@
-.flyer-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
 
-.flyer-image img {
-    margin-top: 50px;
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-right: 25px;
+.form{
+ margin-left: 415px;
 }
-
-.flyer-image p {
-    text-align: left;
-    width: 450px;
-    margin-left: 20px;
-}
-
 
 .container h1, h2 {
     color: black;
@@ -62,7 +44,7 @@ a:hover {
 body {
   margin: 0;
   box-sizing: border-box;
-  background-color: cornflowerblue
+  background-color: lightcoral
 }
 
 .container{
