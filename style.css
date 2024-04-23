@@ -1,0 +1,226 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  overflow-x: hidden;
+  
+}
+
+
+header {
+  background-color: black;
+  color: whitesmoke;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 35px;
+  font-family: 'Expletus Sans', sans-serif;
+  color: white;
+  margin-left: 12px;
+  
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: whitesmoke;
+  margin-left: auto; /*15*/
+  text-decoration: none;
+  font-family: 'Expletus Sans', sans-serif;
+  margin-right: auto; /*25*/
+}
+
+nav a:hover{
+  background-color: whitesmoke;
+  color: black;
+}
+
+.animation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, cornflowerblue, mediumpurple, lightcoral, whitesmoke);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    z-index:-1;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.title{
+  margin-top: 235px;
+}
+
+.title h1{
+  text-align: center;
+  font-family: 'Expletus Sans', sans-serif;
+  font-size: 75px;
+  color:antiquewhite
+}
+
+.title h2{
+  text-align: center;
+  font-family: 'Expletus Sans', sans-serif;
+  font-size: 40px;
+  color: antiquewhite;
+}
+
+.title h3{
+  text-align:center;
+  font-size: 22px;
+  margin-top: 100px;
+  color: black;
+}
+
+.about-container{
+  margin-top: 110px;
+}
+
+.about-container h1{
+  text-align: center;
+  font-size: 50px;
+}
+
+.about-container h2{
+  text-align: center;
+  font-size: 20px;
+}
+
+.image-container {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    opacity: 0%;
+
+
+}
+
+.images {
+    white-space: nowrap;
+    animation: scroll 25s linear infinite;
+
+}
+
+.images img {
+    display: inline-block;
+    width:500px;
+    height:auto;
+    padding:50px;
+    border-radius: 25%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.meet-us-containter{
+  background-image: url('cool-background.png');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+.meet-us-containter h1{
+  text-align: center;
+  font-size: 65px;
+  font-family: 'Expletus Sans', sans-serif;
+  color: whitesmoke;
+}
+
+#team-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.team-member {
+    display: inline-block;
+    width: 30%;
+    margin: 2%;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    border-radius: 50%;
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.fun-facts {
+    font-style: italic;
+    color: darkslategrey;
+}
+
+.interactive {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.interactive:hover {
+    transform: scale(1.1);
+}
+
+/*.form {
+  margin-top: 58px;
+}
+
+.form h1{
+  text-align: center;
+  font-size: 40px;
+}
+*/
+
+
+.contact-container{
+  position: absolute;
+  width: 100%;
+  height: 135%;
+  background: linear-gradient(45deg, #ff40ff, #371a94, #00c7fc, whitesmoke);
+  background-size: 500% 500%;
+  animation: gradient 15s ease infinite;
+  z-index:-1;
+  text-align: center;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:30px;
+}
+
+#Juno{
+  background: #949494;
+  
+}
+
