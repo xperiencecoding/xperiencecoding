@@ -38,10 +38,10 @@ nav {
 
 nav a {
   color: whitesmoke;
-  margin-left: auto; /*15*/
+  margin-left: 15px;
   text-decoration: none;
   font-family: 'Expletus Sans', sans-serif;
-  margin-right: auto; /*25*/
+  margin-right: 25px;
 }
 
 nav a:hover{
