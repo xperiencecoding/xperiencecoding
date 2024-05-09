@@ -250,5 +250,5 @@ nav a:hover {
 
   .welcome-carousel-image3{
     box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
-    background-image:url('../Images/IMG_0439.jpg');
+    background-image:url('Images/IMG_0439.jpg');
   }
