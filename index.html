@@ -8,23 +8,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>XPerience Coding</title>
+  <link rel="icon" type="image/x-icon" href="Images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital@1&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>XPerience Coding</h1>
-        </div>
-        <nav>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <div class="container navbar-right">
+                <a class="navbar-brand bg-override">
+                        XPerience Coding
+                </a>
 
-            <li><a href="#home" class ="smooth-scroll">Home</a></li>
-            <li><a href="#about" class ="smooth-scroll">About</a></li>
-            <li><a href="#meet" class ="smooth-scroll">Meet Us</a></li>
-            <li><a href="#contact" class ="smooth-scroll">Contact</a></li>
-            <li><a href="#signUp" class ="smooth-scroll">Sign Up!</a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="#home" class ="smooth-scroll nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#about" class ="smooth-scroll nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#meet" class ="smooth-scroll nav-link">Meet Us</a>
+                        </li>
+                      <li class="nav-item">
+                          <a href="#contact" class ="smooth-scroll nav-link">Contact</a>
+                      </li>
+                      <li><a href="#signUp" class ="smooth-scroll nav-link">Sign Up!</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
     </header>
     <main>
        <section id = "home"></section>
@@ -32,25 +55,40 @@
         <div class = "title">
           <h1>XPerience Coding</h1>
           <h2>Empowering Young Minds Through Code</h2>
-          <h3>A non-profit based in the Lake County Area dedicated to to providing 2nd-8th graders with the foundational
+          <h3>A non-profit based in the Lake County Area dedicated to providing 2nd-8th graders with the foundational
           skills of coding. <br>Our mission is to empower the youth of the greater Lake County Area through the world of coding.</h3>
         </div>
       <section id = "about"></section>
       <div class = "about-container">
-        <h1>Some of the work that we have done...</h1>
-        <h2>Our most recent camp was the first week of January 2024, where we fortunate to have ~40 kids, ages 8-14, sign up<br>Our camp stretched over 4 days, with kids learning foundational skills for the first couple days, and then creating thier own game the last two days.<br> We invited parents to come in on the last day and see what their kid had made.</h2>
-        <div class = "about-image-container">
-          <div class = "images">
-            <img src = "Images/IMG_0392.jpg">
-            <img src = "Images/IMG_0439.jpg">
-            <img src = "Images/IMG_0441.jpg">
-            <img src = "Images/IMG_0448.jpg">
-            <img src = "Images/IMG_0471.jpg">
-          </div>
+        <div id="welcomeCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Welcome 1"></button>
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="1"
+                    aria-label="Welcome 2"></button>
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="2"
+                    aria-label="Welcome 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item welcome-carousel-image1 active">
+                </div>
+                <div class="carousel-item welcome-carousel-image2">
+                </div>
+                <div class="carousel-item welcome-carousel-image3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
       </div>
       <section id = "meet"></section>
-      <div class = "meet-us-containter">
+      <div class = "meet-us-container">
         <h1>Meet the team!</h1>
         <div id="team-section">
           <div class="team-member interactive">
@@ -94,7 +132,7 @@
             <div class="team-member interactive">
               <img src="Headshots/SinghAaryan.jpg" alt="Team Member 7">
               <h3>Aaryan Singh</h3>
-              <p class="fun-facts">Head of Curriculum Development</p>
+              <p class="fun-facts">Head of Curriculum Development, Board of Director</p>
             </div>
 
             <div class="team-member interactive">
@@ -110,6 +148,8 @@
           
         </div>
     </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
 </body>
 </html>
-
